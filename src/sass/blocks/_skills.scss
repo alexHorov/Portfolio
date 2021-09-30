@@ -34,4 +34,26 @@
             line-height: 18px;
         }
     }
+    &__rating {
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        grid-template-rows: 70px 70px;
+        row-gap: 35px;
+        column-gap: 45px;
+        padding-top: 120px;
+        &-item {
+            display: grid;
+            grid-template: 21px 14px/200px 35px;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        &-line {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background: grey;
+            span {
+                background: $main-color;
+            }
+        }
+    }
 }
